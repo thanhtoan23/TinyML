@@ -158,19 +158,6 @@ float* probabilities = output->data.f;
 ✅ **Edge AI**: Xử lý hoàn toàn trên thiết bị, không cần cloud  
 ✅ **Chuẩn hóa**: Tự động sinh thông số cho firmware  
 
-## Hạn Chế
-
-⚠️ Chỉ sử dụng 2 đặc trưng (Temp, Humidity)  
-⚠️ Mô hình chưa tối ưu (có thể bổ sung thêm features)  
-⚠️ Lớp Rainy khó phân biệt với Cloudy  
-
-## Hướng Phát Triển
-
-- [ ] Bổ sung đặc trưng: Áp suất, Tốc độ gió, Độ che phủ mây
-- [ ] Thử nghiệm kiến trúc mạng khác
-- [ ] Lượng tử hóa sâu để giảm kích thước mô hình
-- [ ] Thêm metrics: Precision, Recall, F1-Score
-- [ ] Triển khai Web Dashboard để hiển thị kết quả
 
 ## Tài Liệu Tham Khảo
 
