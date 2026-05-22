@@ -1,0 +1,19 @@
+=== THÔNG SỐ ĐỂ ĐƯA VÀO CODE C++ TRÊN ESP32 ===
+
+1. Tham số do StandardScaler cung cấp:
+float temp_mean = 18.6480;
+float temp_std = 16.6074;
+float humid_mean = 68.5105;
+float humid_std = 20.2033;
+
+2. Công thức đưa dữ liệu vào:
+float scaled_temp = (real_temp - temp_mean) / temp_std;
+float scaled_humid = (real_humid - humid_mean) / humid_std;
+input->data.f[0] = scaled_temp;
+input->data.f[1] = scaled_humid;
+
+3. Bảng tra mã nhãn:
+Index 0 => Cloudy
+Index 1 => Rainy
+Index 2 => Snowy
+Index 3 => Sunny
